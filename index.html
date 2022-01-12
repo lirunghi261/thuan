@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"  />
+    <link rel="stylesheet" href="./slickAndJs/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./slickAndJs/owl.carousel.min.css">
+    <link rel="stylesheet" href="./style/index.css">
+    <title>Thực tập tuần 5</title>
+</head>
+<body>
+    <header>
+        <div class="overlay hidden"></div>
+        <div class="header-top">
+            <div class="box-container">
+                <div class="wrap-header-top">
+                    <div class="header-top-left">
+                        <span class="sale">Giảm giá 20% dịp lễ 20/10</span>
+                    </div>
+                    <div class="header-top-right">
+                        <div class="header-top-icon language">
+                            <i class="fas fa-globe" id="icon_header-top"></i>
+                            <span>tiếng việt</span>
+                        </div>
+                        <div class="header-top-icon store">
+                            <i class="fas fa-map-marker-alt" id="icon_header-top"></i>
+                            <span>cửa hàng</span>
+                        </div>
+                        <div class="header-top-icon account">
+                            <i class="far fa-user" id="icon_header-top"></i>
+                            <span>tải khoản</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-logo">
+            <div class="box-container">
+                <div class="wrap-header-logo">
+                    <i class="fas fa-bars" id = "nav-bars"></i>
+                    <div class="header-logo-left">
+                        <div class="header-logo-company">
+                            <img src="./img/logo_menu_company.png" alt="">
+                        </div>
+                        <div class="header-logo-brand">
+                            <img src="./img/logo_menu_brand.png" alt="">
+                        </div>
+                    </div>
+                    <div class="header-logo-right">    
+                         <form class="header-logo-input">
+                           
+                            <input type="text" placeholder="nhập từ khóa..." class="header-input">
+                             <div class="header-select">
+                                <select name="tất cả danh mục" id="">
+                                   <option value="">Tất cả danh mục</option>
+                                   <option value="">Đồng hồ rolex</option>
+                                   <option value="">Đồng hồ casio</option>
+                                </select>
+                            </div>
+                            <div class="header-search">
+                                <p>tìm kiếm</p>
+                            </div>
+                         </form>
+                         <div class="header-logo-hotline">
+                            <i class="fas fa-headphones-alt"></i>
+                            <div class="hotline">
+                                <p class="hotline-title">Hotline</p>
+                                <p class="hotline-phone">0934 003 403</p>
+                            </div>
+                         </div>
+                         <div class="header-logo-cart">
+                            <i class="fas fa-cart-plus"></i>
+                            <div class="shoping-cart">
+                                <p class="cart-title">Giỏ hàng</p>
+                                <p class="cart-money">0,00</p>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <div class="header-nav">
+            <div class="box-container">
+                <div class="wrap-header-nav">
+                    <div class="header-product-dropdown">
+                        <p class="product-category">danh sách sản phẩm</p>
+                        <i class="fas fa-bars"></i>
+                        <div class="header-product-items">
+                            <p class="product-item">Danh sach 1</p>
+                            <p class="product-item">Danh sach 2</p>
+                            <p class="product-item">Danh sach 3</p>
+                        </div>
+                    </div>
+                    <ul class="header-product-menu">
+                        <form class="header-nav-input">
+                           
+                            <input type="text" placeholder="nhập từ khóa..." class="header-nav-input">
+                            <button type="submit">tìm kiếm</button>
+                         </form>
+                        <li class="product-menu-item">trang chủ</li>
+                        <li class="product-menu-item">giới thiệu</li>
+                        <li class="product-menu-item">limited</li>
+                        <li class="product-menu-item">khuyến mãi</li>
+                        <li class="product-menu-item">
+                            <div class="product-menu-item-dropdown">
+                                <p>tin tức</p>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="product-menu-sub-item">
+                                <p class="menu-sub-item">tin tức 1</p>
+                                <p class="menu-sub-item">tin tức 2</p>
+                                <p class="menu-sub-item">tin tức 3</p>
+                            </div>
+                        </li>
+                        <li class="product-menu-item">
+                            <div class="product-menu-item-dropdown">
+                                <p>liên hệ</p>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="product-menu-sub-item">
+                                <p class="menu-sub-item">tin tức 1</p>
+                                <p class="menu-sub-item">tin tức 2</p>
+                                <p class="menu-sub-item">tin tức 3</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="banner">
+            <div class="banner-slider owl-carousel owl-theme">
+                <div class="banner-image">
+                    <img src="./img/banner_slider.jpg" alt="">
+                </div>
+                <div class="banner-image">
+                    <img src="./img/banner-slider2.jpg" alt="">
+                </div>
+                <div class="banner-image">
+                    <img src="./img/banner-slider3.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="mission">
+            <div class="box-container">
+                <div class="wrap-mission">
+                    <div class="mission-item">
+                        <div class="mission-image">
+                            <img src="./img/icon_genuine.png" alt="" >
+                        </div>
+                        <div class="mission-detail">
+                            <p class="mission-title">Chính hãng 100% giao</p>
+                            <p class="mission-content">Nhà phân phối ủy quyền casio</p>
+                        </div>
+                    </div>
+                    <div class="mission-item">
+                        <div class="mission-image">
+                            <img src="./img/icon_ship.png" alt="" >
+                        </div>
+                        <div class="mission-detail">
+                            <p class="mission-title">Giao hàng toàn quốc</p>
+                            <p class="mission-content">Freeship với HĐ trên 1 triệu</p>
+                        </div>
+                    </div>
+                    <div class="mission-item">
+                        <div class="mission-image">
+                            <img src="./img/icon_insurance.png" alt="" >
+                        </div>
+                        <div class="mission-detail">
+                            <p class="mission-title">Bảo hành chính hãng</p>
+                            <p class="mission-content">BH máy 5 năm G-Shock & Baby-G</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="popular">
+            <div class="box-container">
+                <div class="wrap-popular">
+                    <div class="popular-column">
+                        <div class="popular-image">
+                            <img src="./img/image_fashion.jpg" alt="">
+                        </div>
+                        <h3 class="popular-title">fashion</h3>
+                    </div>
+                    <div class="popular-column">
+                        <div class="popular-image">
+                            <img src="./img/image_GBD.jpg" alt="">
+                        </div>
+                        <h3 class="popular-title">GBD - H1000</h3>
+                    </div>
+                    <div class="popular-column">
+                        <div class="popular-image">
+                            <img src="./img/image_pairwatch.jpg" alt="">
+                        </div>
+                        <h3 class="popular-title">pair watch</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="banner-hot">       
+            <div class="content-banner-hot">
+                <div class="box-container">
+                    <div class="wrap-productHot">
+                        <div class="wrap-productHot-infor">
+                            <h2 class="title">Sản phẩm <span>hot</span></h2>
+                            <div class="decor-line"></div>
+                            <div class="box-productHot">
+                                <p class="productHot-category">G-Shock</p>
+                                <div class="productHot-names">
+                                    <p class="productHot-item active">g-squad</p>
+                                    <p class="productHot-item">gbd-h1000</p>
+                                </div>
+                                <p class="productHot-price">giá: 
+                                    <span>4.700.000 đ</span>
+                                </p>
+                                <div class="see-detail">
+                                    <p>xem chi tiết</p>
+                                </div>
+                            </div>    
+                            <div class="button-navs">
+                                <div class="button-prev">
+                                    <i class="fas fa-chevron-left prev" id="bannerHot-prev"></i>
+                                </div>
+                                <div class="button-next">
+                                    <i class="fas fa-chevron-right next" id="bannerHot-next"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="./img/banner_productHot1.jpg" alt="" class="image-banner-hot">
+        </section>
+        <section class="new-products">
+            <div class="box-container">
+                <div class="wrap-products-brand">
+                    <div class="wrap-brand">
+                        <div class="wrap-brand-slider owl-carousel owl-theme">
+                            <div class="box-brand">
+                                <img src="./img/banner1.jpg" alt="">
+                            </div>
+                            <div class="box-brand">
+                                <img src="./img/banner2.jpg" alt="">
+                            </div>
+                            <div class="box-brand">
+                                <img src="./img/banner3.jpg" alt="">
+                            </div>
+                            <div class="box-brand">
+                                <img src="./img/banner4.jpg" alt="">
+                            </div>
+                            <div class="box-brand">
+                                <img src="./img/banner5.jpg" alt="">
+                            </div>
+                            <div class="box-brand">
+                                <img src="./img/banner3.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrap-new-products">
+                        <h2 class="title">
+                            Sản phẩm mới
+                        </h2>
+                        <div class="decor-line"></div>
+
+                        <div class="new-product-slider owl-carousel owl-theme">
+                            <div class="box-new-product">
+                                <div class="image-new-product">
+                                    <img src="./img/product1.png" alt="">
+                                </div>
+                                <div class="new-product-content">
+                                    <p class="new-product-name">LTP-VT01GL-7B</p>
+                                    <p class="new-product-price">1.058.000 đ</p>
+                                </div>
+                                <div class="new">
+                                    <p>Mới</p>
+                                </div>
+                            </div>
+                            <div class="box-new-product">
+                                <div class="image-new-product">
+                                    <img src="./img/product2.jpg" alt="">
+                                </div>
+                                <div class="new-product-content">
+                                    <p class="new-product-name">SPG-VT01GL-7B</p>
+                                    <p class="new-product-price">2.230.000 đ</p>
+                                </div>
+                                <div class="new">
+                                    <p>Mới</p>
+                                </div>
+                            </div>
+                            <div class="box-new-product">
+                                <div class="image-new-product">
+                                    <img src="./img/product3.png" alt="">
+                                </div>
+                                <div class="new-product-content">
+                                    <p class="new-product-name">LTP-VT01GL-7B</p>
+                                    <p class="new-product-price">1.058.000 đ</p>
+                                </div>
+                                <div class="new">
+                                    <p>Mới</p>
+                                </div>
+                            </div>
+                            <div class="box-new-product">
+                                <div class="image-new-product">
+                                    <img src="./img/product4.png" alt="">
+                                </div>
+                                <div class="new-product-content">
+                                    <p class="new-product-name">SPG-VT01GL-7B</p>
+                                    <p class="new-product-price">2.230.000 đ</p>
+                                </div>
+                                <div class="new">
+                                    <p>Mới</p>
+                                </div>
+                            </div>
+                            <div class="box-new-product">
+                                <div class="image-new-product">
+                                    <img src="./img/product5.png" alt="">
+                                </div>
+                                <div class="new-product-content">
+                                    <p class="new-product-name">LTP-VT01GL-7B</p>
+                                    <p class="new-product-price">1.058.000 đ</p>
+                                </div>
+                                <div class="new">
+                                    <p>Mới</p>
+                                </div>
+                            </div>
+                            <div class="box-new-product">
+                                <div class="image-new-product">
+                                    <img src="./img/product6.png" alt="">
+                                </div>
+                                <div class="new-product-content">
+                                    <p class="new-product-name">SPG-VT01GL-7B</p>
+                                    <p class="new-product-price">2.230.000 đ</p>
+                                </div>
+                                <div class="new">
+                                    <p>Mới</p>
+                                </div>
+                            </div>
+                            <div class="box-new-product">
+                                <div class="image-new-product">
+                                    <img src="./img/product3.png" alt="">
+                                </div>
+                                <div class="new-product-content">
+                                    <p class="new-product-name">LTP-VT01GL-7B</p>
+                                    <p class="new-product-price">1.058.000 đ</p>
+                                </div>
+                                <div class="new">
+                                    <p>Mới</p>
+                                </div>
+                            </div>
+                            <div class="box-new-product">
+                                <div class="image-new-product">
+                                    <img src="./img/product5.png" alt="">
+                                </div>
+                                <div class="new-product-content">
+                                    <p class="new-product-name">SPG-VT01GL-7B</p>
+                                    <p class="new-product-price">2.230.000 đ</p>
+                                </div>
+                                <div class="new">
+                                    <p>Mới</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrap-popular-products">
+                        <h2 class="title">
+                            Sản phẩm bán chạy
+                        </h2>
+                        <div class="decor-line"></div>
+                        <div class="popular-product-slider owl-carousel owl-theme">
+                            <div class="box-products">
+                                <div class="box-popular-product">
+                                    <div class="image-popular-product">
+                                        <img src="./img/product1.png" alt="">
+                                    </div>
+                                    <div class="popular-product-content">
+                                        <p class="popular-product-name">LTP-VT01GL-7B</p>
+                                        <p class="popular-product-price">1.058.000 đ</p>
+                                    </div>
+                                </div>
+                                <div class="box-popular-product">
+                                    <div class="image-popular-product">
+                                        <img src="./img/product2.jpg" alt="">
+                                    </div>
+                                    <div class="popular-product-content">
+                                        <p class="popular-product-name">LTP-VT01GL-7B</p>
+                                        <p class="popular-product-price">1.058.000 đ</p>
+                                    </div>
+                                </div>
+                                <div class="box-popular-product">
+                                    <div class="image-popular-product">
+                                        <img src="./img/product3.png" alt="">
+                                    </div>
+                                    <div class="popular-product-content">
+                                        <p class="popular-product-name">LTP-VT01GL-7B</p>
+                                        <p class="popular-product-price">1.058.000 đ</p>
+                                    </div>
+                                </div>
+                                <div class="box-popular-product">
+                                    <div class="image-popular-product">
+                                        <img src="./img/product4.png" alt="">
+                                    </div>
+                                    <div class="popular-product-content">
+                                        <p class="popular-product-name">LTP-VT01GL-7B</p>
+                                        <p class="popular-product-price">1.058.000 đ</p>
+                                    </div>
+                                </div>
+                                <div class="box-popular-product">
+                                    <div class="image-popular-product">
+                                        <img src="./img/product5.png" alt="">
+                                    </div>
+                                    <div class="popular-product-content">
+                                        <p class="popular-product-name">LTP-VT01GL-7B</p>
+                                        <p class="popular-product-price">1.058.000 đ</p>
+                                    </div>
+                                </div>
+                                <div class="box-popular-product">
+                                    <div class="image-popular-product">
+                                        <img src="./img/product6.png" alt="">
+                                    </div>
+                                    <div class="popular-product-content">
+                                        <p class="popular-product-name">LTP-VT01GL-7B</p>
+                                        <p class="popular-product-price">1.058.000 đ</p>
+                                    </div>
+                                </div>
+                                <div class="box-popular-product">
+                                    <div class="image-popular-product">
+                                        <img src="./img/product7.jpg" alt="">
+                                    </div>
+                                    <div class="popular-product-content">
+                                        <p class="popular-product-name">LTP-VT01GL-7B</p>
+                                        <p class="popular-product-price">1.058.000 đ</p>
+                                    </div>
+                                </div>
+                                <div class="box-popular-product">
+                                    <div class="image-popular-product">
+                                        <img src="./img/product8.jpg" alt="">
+                                    </div>
+                                    <div class="popular-product-content">
+                                        <p class="popular-product-name">LTP-VT01GL-7B</p>
+                                        <p class="popular-product-price">1.058.000 đ</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-products">
+                                <div class="box-popular-product">
+                                    <div class="image-popular-product">
+                                        <img src="./img/product1.png" alt="">
+                                    </div>
+                                    <div class="popular-product-content">
+                                        <p class="popular-product-name">LTP-VT01GL-7B</p>
+                                        <p class="popular-product-price">1.058.000 đ</p>
+                                    </div>
+                                </div>
+                                <div class="box-popular-product">
+                                    <div class="image-popular-product">
+                                        <img src="./img/product2.jpg" alt="">
+                                    </div>
+                                    <div class="popular-product-content">
+                                        <p class="popular-product-name">LTP-VT01GL-7B</p>
+                                        <p class="popular-product-price">1.058.000 đ</p>
+                                    </div>
+                                </div>
+                                <div class="box-popular-product">
+                                    <div class="image-popular-product">
+                                        <img src="./img/product3.png" alt="">
+                                    </div>
+                                    <div class="popular-product-content">
+                                        <p class="popular-product-name">LTP-VT01GL-7B</p>
+                                        <p class="popular-product-price">1.058.000 đ</p>
+                                    </div>
+                                </div>
+                                <div class="box-popular-product">
+                                    <div class="image-popular-product">
+                                        <img src="./img/product4.png" alt="">
+                                    </div>
+                                    <div class="popular-product-content">
+                                        <p class="popular-product-name">LTP-VT01GL-7B</p>
+                                        <p class="popular-product-price">1.058.000 đ</p>
+                                    </div>
+                                </div>
+                                <div class="box-popular-product">
+                                    <div class="image-popular-product">
+                                        <img src="./img/product5.png" alt="">
+                                    </div>
+                                    <div class="popular-product-content">
+                                        <p class="popular-product-name">LTP-VT01GL-7B</p>
+                                        <p class="popular-product-price">1.058.000 đ</p>
+                                    </div>
+                                </div>
+                                <div class="box-popular-product">
+                                    <div class="image-popular-product">
+                                        <img src="./img/product6.png" alt="">
+                                    </div>
+                                    <div class="popular-product-content">
+                                        <p class="popular-product-name">LTP-VT01GL-7B</p>
+                                        <p class="popular-product-price">1.058.000 đ</p>
+                                    </div>
+                                </div>
+                                <div class="box-popular-product">
+                                    <div class="image-popular-product">
+                                        <img src="./img/product7.jpg" alt="">
+                                    </div>
+                                    <div class="popular-product-content">
+                                        <p class="popular-product-name">LTP-VT01GL-7B</p>
+                                        <p class="popular-product-price">1.058.000 đ</p>
+                                    </div>
+                                </div>
+                                <div class="box-popular-product">
+                                    <div class="image-popular-product">
+                                        <img src="./img/product8.jpg" alt="">
+                                    </div>
+                                    <div class="popular-product-content">
+                                        <p class="popular-product-name">LTP-VT01GL-7B</p>
+                                        <p class="popular-product-price">1.058.000 đ</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </section>
+        <section class="style">
+            <div class="style-content">
+                <div class="box-container">
+                    <div class="wrap-style">
+                        <div class="wrap-style-infor">
+                            <h2 class="title">Phong cách</h2>
+                            <div class="decor-line"></div>
+                            <ul class="style-list">
+                                <li class="style-item">g - ms</li>
+                                <li class="style-item">g - squad</li>
+                                <li class="style-item">limited models</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="see-detail">
+                        <p>xem chi tiết</p>
+                    </div>
+                </div>
+            </div>
+             <img src="./img/banner_style.jpg" alt="" class="image-style">
+          
+        </section>
+        <section class="news">
+            <div class="box-container">
+                <div class="wrap-news">
+                    <div class="news-title">
+                        <h2 class="title">Tin tức & sự kiện</h2>
+                        <p class="see-more">xem thêm</p>
+                    </div>
+                    <div class="decor-line"></div>
+                    <div class="wrap-news-box">
+                        <div class="box-news-main">
+                            <div class="box-news">
+                                <img src="./img/event_news.jpg" alt="">
+                                <div class="box-news-infor">
+                                    <p class="box-news-date">23/06/2020  11:00</p>
+                                    <p class="box-news-title">Mix-Match đồng hồ Casio “thấn sầu” như người đẹp Mỹ Khôi</p>
+                                    <p class="box-new-content">Cô nàng bật mí để luôn có vẻ ngoài năng động, nổi bật trong những buổi tiệc sôi động ngoài chọn thời trang ....</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-news-sub">
+                            <div class="box-news">
+                                <div class="box-news-infor">
+                                    <p class="box-news-date">23/06/2020  11:00</p>
+                                    <p class="box-news-title">Mix-Match đồng hồ Casio “thấn sầu” như người đẹp Mỹ Khôi</p>
+                                  
+                                </div>
+                            </div>
+                            <div class="box-news">
+                                <div class="box-news-infor">
+                                    <p class="box-news-date">23/06/2020  11:00</p>
+                                    <p class="box-news-title">Mix-Match đồng hồ Casio “thấn sầu” như người đẹp Mỹ Khôi</p>
+                                  
+                                </div>
+                            </div>
+                            <div class="box-news">
+                                <div class="box-news-infor">
+                                    <p class="box-news-date">23/06/2020  11:00</p>
+                                    <p class="box-news-title">Mix-Match đồng hồ Casio “thấn sầu” như người đẹp Mỹ Khôi</p>
+                                  
+                                </div>
+                            </div>
+                            <div class="box-news">
+                                <div class="box-news-infor">
+                                    <p class="box-news-date">23/06/2020  11:00</p>
+                                    <p class="box-news-title">Mix-Match đồng hồ Casio “thấn sầu” như người đẹp Mỹ Khôi</p>
+                                  
+                                </div>
+                            </div>
+                            <div class="box-news">
+                                <div class="box-news-infor">
+                                    <p class="box-news-date">23/06/2020  11:00</p>
+                                    <p class="box-news-title">Mix-Match đồng hồ Casio “thấn sầu” như người đẹp Mỹ Khôi</p>
+                                  
+                                </div>
+                            </div>
+                            <div class="box-news">
+                                <div class="box-news-infor">
+                                    <p class="box-news-date">23/06/2020  11:00</p>
+                                    <p class="box-news-title">Mix-Match đồng hồ Casio “thấn sầu” như người đẹp Mỹ Khôi</p>
+                                  
+                                </div>
+                            </div>
+                            <div class="box-news">
+                                <div class="box-news-infor">
+                                    <p class="box-news-date">23/06/2020  11:00</p>
+                                    <p class="box-news-title">Mix-Match đồng hồ Casio “thấn sầu” như người đẹp Mỹ Khôi</p>
+                                  
+                                </div>
+                            </div>
+                            <div class="box-news">
+                                <div class="box-news-infor">
+                                    <p class="box-news-date">23/06/2020  11:00</p>
+                                    <p class="box-news-title">Mix-Match đồng hồ Casio “thấn sầu” như người đẹp Mỹ Khôi</p>
+                                  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </section>
+        <section class="email">
+            <div class="box-container">
+                <div class="wrap-email">
+                    <div class="wrap-email-icon">
+                        <img src="./img/image_email.png" alt="">
+                        <div class="email-infor">
+                            <p class="email-title">Đăng kí nhận tin</p>
+                            <p class="email-content">Hãy để lại email để nhận ưu đãi nhiều hơn</p>
+                        </div>
+                    </div>
+                    <form action="" class="form-input-email">
+                        <input type="text" placeholder="Nhập địa chỉ email" class="input">
+                        <input type="submit" value="Đăng kí" class="submit-email">
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="box-container">
+            <div class="wrap-footer">
+                <div class="footer-top">
+                    <div class="box-footer-top">
+                        <h3 class="footer-title">
+                            anh khuê sài gòn
+                        </h3>
+                        <div class="footer-content">
+                            <i class="fas fa-map-marker-alt" id="icon-footer"></i>
+                            <p class="footer-infor">Số 20 đường 3 tháng 2, P.12, Q.10</p>
+                        </div>
+                        <div class="footer-content">
+                            <p class="footer-infor">Tư vấn mua hàng (8:00 - 17:00):</p>
+                        </div>
+                        <div class="footer-content">
+                            <i class="fas fa-phone-alt" id="icon-footer"></i>
+                            <p class="footer-infor">0934 003 403</p>
+                        </div>
+                        <div class="footer-content">
+                            <p class="footer-infor">Chăm sóc khách hàng:</p>
+                        </div>
+                        <div class="footer-content">
+                            <i class="fas fa-phone-alt" id="icon-footer"></i>
+                            <p class="footer-infor">0916 12 17 19</p>
+                        </div>
+                        <div class="footer-content">
+                            <i class="fas fa-envelope" id="icon-footer"></i>
+                            <p class="footer-infor">online@anhkhuesaigon.com.vn</p>
+                        </div>
+                        <div class="footer-content">
+                            <i class="fas fa-globe-americas" id="icon-footer"></i>
+                            <p class="footer-infor">casio.anhkhue.com</p>
+                        </div>
+                    </div>
+                    <div class="box-footer-top">
+                        <h3 class="footer-title">
+                            thông tin
+                        </h3>
+                        <div class="footer-content">
+                            <p class="footer-infor">Liên hệ</p>
+                        </div>
+                        <div class="footer-content">
+                            <p class="footer-infor">Giới thiệu</p>
+                        </div>
+                        <div class="footer-content">
+                            <p class="footer-infor">Lịch sử hình thành</p>
+                        </div>
+                        <div class="footer-content">
+                            <p class="footer-infor">Tầm nhìn sứ mệnh</p>
+                        </div>
+                        <div class="footer-content">
+                            <p class="footer-infor">Website Casio</p>
+                        </div>
+                    </div>
+                    <div class="box-footer-top">
+                        <h3 class="footer-title">
+                            hỗ trợ
+                        </h3>
+                        <div class="footer-content">
+                            <p class="footer-infor">Hướng dẫn thanh toán</p>
+                        </div>
+                        <div class="footer-content">
+                            <p class="footer-infor">Hướng dẫn đổi trả hàng</p>
+                        </div>
+                        <div class="footer-content">
+                            <p class="footer-infor">Hướng dẫn tìm của hàng</p>
+                        </div>
+                        <div class="footer-content">
+                            <p class="footer-infor">Hướng dẫn mua hàng online</p>
+                        </div>
+                        <div class="footer-content">
+                            <p class="footer-infor">Chính sách khách hàng thân thiết</p>
+                        </div>
+                    </div>
+                    <div class="box-footer-top">
+                        <h3 class="footer-title">
+                            chính sách
+                        </h3>
+                        <div class="footer-content">
+                            <p class="footer-infor">Quy định đổi trả</p>
+                        </div>
+                        <div class="footer-content">
+                            <p class="footer-infor">Qui định bảo hành</p>
+                        </div>
+                        <div class="footer-content">
+                            <p class="footer-infor">Trung tâm bảo hành</p>
+                        </div>
+                        <div class="footer-content">
+                            <p class="footer-infor">Điều khoản dịch vụ</p>
+                        </div>
+                        <div class="footer-content">
+                            <p class="footer-infor">Chính sách bảo mật</p>
+                        </div>
+                        <div class="footer-content-fb-yt">
+                            <i class="fab fa-facebook"></i>
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="image-footer-bottom">
+                        <img src="./img/logo_menu_company.png" alt="">
+                        <img src="./img/logo_footer_sale.png" alt="">
+                    </div>
+                    <div class="image-footer-campus">
+                        <p>&copy 2021 anh khuê. công ty cổ phần anh khuê sài gòn.</p>
+                        <p>trụ sở chính: 104 hùng vương, phường 2, TP.Tân An, Tỉnh Long An</p>
+                        <p>GCNĐKKD: 1101780735 do Sở KH&ĐT tỉnh Long An cấp ngày 28/10/2016</p>
+                        <p>CN : Số 20 đường 3 tháng 2, Phường 12, Quận 10, HCM</p>
+                        <p>Email: online@anhkhuesaigon.com.vn</p>
+                    </div>
+                    <div class="image-footer-casio">
+                        <img src="./img/logo_footer_brand.jpg" alt="">
+                    </div>
+                </div>
+                <div class="footer-copy">
+                    <p class="copy">&copy Bản quyền thuộc về Anh Khuê Sài Gòn - Developed by ANFLASH TECHNOLOGY.</p>
+                    <img src="./img/logo_footer_payment.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./slickAndJs/owl.carousel.min.js"></script>
+    <script src="./slickAndJs/main.js"></script>
+    <script src="./slickAndJs/app.js"></script>
+</body>
+</html>

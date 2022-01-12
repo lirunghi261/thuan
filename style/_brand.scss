@@ -1,0 +1,27 @@
+.brand{
+    & .box-container{
+        & .wrap-brand{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap:10px;
+            & .box-brand{
+                width: calc(calc(100% / 5) - 10px);
+                height: 100px;
+                padding: 25px 40px;
+                border: 2px solid #f9f9f9;
+                & img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: fill;
+                }
+                &:nth-child(2){
+                    padding: 0px;
+                }
+                &:hover{
+                    border: 2px solid $backgroundPrimary;
+                }
+            }
+        }
+    }
+}

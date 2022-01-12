@@ -1,0 +1,92 @@
+.mission{
+    padding: 15px 0;
+    & .box-container{
+        & .wrap-mission{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            --columns:3;
+            --spacing:15px;
+            margin-left: calc(var(--spacing) * (-1));
+            & .mission-item{
+                display: flex;
+                width: calc(calc(100% / var(--columns)) - var(--spacing));
+                margin-left: var(--spacing);
+   
+                gap:15px;
+                & .mission-image{
+                    height: 60px;
+                    width: 55px;
+                    & img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: fill;
+                    }
+                }
+                & .mission-detail{
+                    & .mission-title{
+                        font-weight: 600;
+                    }
+                    & .mission-content{
+                        font-weight: 300;
+                    }
+                }
+
+            }
+        }
+    }
+}
+// @media screen and (max-width:1023px) {
+//     .mission{
+//         & .box-container{
+//             & .wrap-mission{
+//                 & .mission-item{
+//                     --coulumns:2;
+//                     margin-bottom: var(--spacing);
+//                 }
+//             }
+//         }
+//     }
+// }
+@media screen and (max-width:767px) {
+    .mission{
+        & .box-container{
+            & .wrap-mission{
+               flex-direction: column;
+               align-items: center;
+               gap:20px;
+            }
+        }
+    }
+}
+@media screen and (max-width:480px) {
+    .mission{
+        & .box-container{
+            & .wrap-mission{
+                margin-left: 0;
+               & .mission-item{
+                   display: flex;
+                   flex-direction: column;
+                   align-items: center;
+                   width: 100%;
+                   & .mission-image{
+                       height: 40px;
+                       width: 60px;
+                       
+                       & img{
+                           width: 100%;
+                           height: 100%;
+                           object-fit: fill;
+                       }
+                   }
+                   & .mission-detail{
+                       text-align: center;
+                       margin-right: 0;
+                       width: 100%;
+                     
+                   }
+               }
+            }
+        }
+    }
+}
